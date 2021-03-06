@@ -1,0 +1,11 @@
+.mob-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.875rem;
+	margin-bottom: 2.5rem;
+
+	.logo {
+		height: 1.125rem;
+	}
+}
