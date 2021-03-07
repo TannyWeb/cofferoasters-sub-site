@@ -48,6 +48,10 @@
 		display: none;
 		margin: 100px auto;
 	}
+
+	@include breakpoint-up('medium') {
+		display: none;
+	}
 }
 
 .desktop-header {
