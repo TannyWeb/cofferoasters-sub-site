@@ -3,12 +3,13 @@
 	color: $dark-grey-blue;
 
 	.collection-title-wrapper {
-		background: linear-gradient(
-			180deg,
-			rgba(254, 252, 247, 0.0001) 0%,
-			#fefcf7 100%
+		background: -webkit-linear-gradient(
+			90deg,
+			#eee,
+			rgba(131, 136, 143, 1)
 		);
-
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 		@include breakpoint-up('medium') {
 			margin-left: -3.625rem;
 			margin-right: -3.625rem;
@@ -29,6 +30,7 @@
 	.wrapper {
 		@include breakpoint-up('large') {
 			display: flex;
+			margin-top: -55px;
 		}
 	}
 

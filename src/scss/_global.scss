@@ -15,6 +15,7 @@
 		// padding: 0 6.25rem;
 		max-width: 1200px;
 		margin: 0 auto;
+		margin-bottom: 100px;
 	}
 }
 
@@ -42,6 +43,11 @@ body {
 	font-size: 1.125rem;
 	line-height: 1.5625rem;
 	padding: 0.9375rem 1.9375rem;
+
+	&:hover {
+		background: #66d2cf;
+		cursor: pointer;
+	}
 }
 
 .hide {
