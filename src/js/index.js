@@ -1,10 +1,11 @@
 // Dummy imports
 import '../scss/main.scss';
 
-import { toggleMenu } from './functions/menu';
+import { toggleMenu, toggleMenuClose } from './functions/menu';
 
 console.log('index loaded');
 // menu();
-// toggleMenu();
+toggleMenu();
+toggleMenuClose();
 
 

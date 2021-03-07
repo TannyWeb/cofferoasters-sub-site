@@ -1,12 +1,7 @@
-// Dummy code ------- can remove
-
-export const greeting = () => {
-	console.log('hello you ');
-};
 
 export const toggleMenu = () => {
-	const menuToggle = document.querySelector('.header__toggle');
-	const overlay = document.querySelector('.overlay');
+	const menuToggle = document.querySelector('.mob-header .open');
+	const overlay = document.querySelector('.mob-header_nav');
 	menuToggle.addEventListener('click', () => {
 		if (overlay.classList.contains('hide')) {
 			overlay.classList.remove('hide');
@@ -17,3 +12,17 @@ export const toggleMenu = () => {
 		}
 	});
 };
+
+export const toggleMenuClose = () => {
+		const menuToggle = document.querySelector('.mob-header_nav .close');
+	const overlay = document.querySelector('.mob-header_nav');
+	menuToggle.addEventListener('click', () => {
+		if (overlay.classList.contains('hide')) {
+			overlay.classList.remove('hide');
+			overlay.classList.add('show');
+		} else {
+			overlay.classList.remove('show');
+			overlay.classList.add('hide');
+		}
+	});
+}

@@ -1,11 +1,51 @@
 .mob-header {
+	margin-top: 1.875rem;
+	margin-bottom: 2.5rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 1.875rem;
-	margin-bottom: 2.5rem;
 
 	.logo {
 		height: 1.125rem;
+	}
+}
+
+.mob-header_nav {
+	outline: 1px solid red;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 222;
+	padding: 0 1.5rem;
+	background: $light-cream;
+	.flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 1.875rem;
+		margin-bottom: 5.3125rem;
+
+		.logo {
+			height: 1.125rem;
+		}
+	}
+
+	ul {
+		font-family: $heading-font;
+		color: $dark-grey-blue;
+		text-align: center;
+		li {
+			list-style: none;
+			font-size: 24px;
+			line-height: 32px;
+			margin-bottom: 32px;
+		}
+	}
+
+	.button {
+		display: block;
+		margin: 100px auto;
 	}
 }
