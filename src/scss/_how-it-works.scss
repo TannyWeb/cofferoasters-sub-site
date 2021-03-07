@@ -20,12 +20,24 @@
 
 		@include breakpoint-up('medium') {
 			text-align: left;
+			margin-bottom: 7rem;
 		}
 	}
 
 	&-wrapper {
-		display: flex;
-		justify-content: space-between;
+		position: relative;
+		@include breakpoint-up('medium') {
+			display: flex;
+			justify-content: space-between;
+
+			&::before {
+				content: '';
+				position: absolute;
+				border-bottom: 2px solid $pale-orange;
+				width: 70%;
+				top: -48px;
+			}
+		}
 	}
 
 	&_item {
@@ -41,9 +53,21 @@
 			line-height: 4.5rem;
 			color: $pale-orange;
 			margin-bottom: 1.5rem;
+			position: relative;
 
 			@include breakpoint-up('medium') {
 				margin-bottom: 2.625rem;
+
+				&::before {
+					content: '';
+					position: absolute;
+					background: $light-cream;
+					border: 1px solid $dark-cyan;
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					top: -60px;
+				}
 			}
 		}
 
