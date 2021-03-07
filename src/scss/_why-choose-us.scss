@@ -1,15 +1,10 @@
 .why-choose-us {
-	// background-color: $dark-grey-blue;
 	text-align: center;
 	border-radius: 10px;
 	color: $light-cream;
 	font-family: $heading-font;
 	padding: 0 1.5rem;
 	border-radius: 0.625rem;
-	// .container {
-	// 	padding-top: 4rem;
-	// 	padding-bottom: 4rem;
-	// 	height: 56.25rem;
 
 	.dark {
 		margin-bottom: 4rem;
@@ -21,10 +16,22 @@
 		padding: 4rem 24px 0;
 		border-radius: 0.625rem;
 
+		@include breakpoint-up('medium') {
+			margin-bottom: -19rem;
+		}
+		@include breakpoint-up('medium') {
+			height: 560px;
+		}
+
 		h3 {
 			font-size: 1.75rem;
 			line-height: 1.75rem;
 			margin-bottom: 1.5rem;
+
+			@include breakpoint-up('medium') {
+				font-size: 32px;
+				line-height: 48px;
+			}
 		}
 
 		p {
@@ -38,25 +45,42 @@
 		&_item {
 			background: $dark-cyan;
 			margin-bottom: 1.5rem;
-			border-radius: 8px;
+			border-radius: 0.5rem;
 			padding: 4.5rem 2.125rem 3.1875rem;
+
+			@include breakpoint-up('medium') {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				padding-bottom: 2.5rem;
+				padding-top: 2.5rem;
+			}
 
 			img {
 				margin-bottom: 3rem;
+				@include breakpoint-up('medium') {
+					width: 3.5rem;
+					margin-bottom: 0;
+				}
 			}
 
-			h4 {
-				font-size: 1.5rem;
-				line-height: 2rem;
-				margin-bottom: 1.5rem;
-			}
+			&-text {
+				@include breakpoint-up('medium') {
+					width: 55%;
+					text-align: left;
+				}
+				h4 {
+					font-size: 1.5rem;
+					line-height: 2rem;
+					margin-bottom: 1.5rem;
+				}
 
-			p {
-				font-family: $body-font;
-				font-size: 0.9375rem;
-				line-height: 1.5625rem;
+				p {
+					font-family: $body-font;
+					font-size: 0.9375rem;
+					line-height: 1.5625rem;
+				}
 			}
 		}
 	}
-	// }
 }
