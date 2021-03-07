@@ -10,6 +10,12 @@
 	@include breakpoint-up('medium') {
 		padding: 0 2.4375rem;
 	}
+
+	@include breakpoint-up('large') {
+		// padding: 0 6.25rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 }
 
 .container {

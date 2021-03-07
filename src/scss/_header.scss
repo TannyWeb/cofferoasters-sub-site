@@ -8,6 +8,9 @@ header {
 	@include breakpoint-up('medium') {
 		background-image: url('../assets/home/tablet/image-hero-coffeepress.jpg');
 	}
+	@include breakpoint-up('large') {
+		background-image: url('../assets/home/desktop/image-hero-coffeepress.jpg');
+	}
 
 	h1 {
 		color: $light-cream;
