@@ -3,27 +3,58 @@
 	font-family: $heading-font;
 	color: $dark-grey-blue;
 
+	.container {
+		@include breakpoint-up('medium') {
+			padding-top: 8.75rem;
+			padding-bottom: 8.75rem;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
 	&_title {
 		color: $grey;
 		margin-bottom: 5rem;
 		font-size: 1.5rem;
 		line-height: 2rem;
+
+		@include breakpoint-up('medium') {
+			text-align: left;
+		}
+	}
+
+	&-wrapper {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	&_item {
 		margin-bottom: 3.5rem;
+
+		@include breakpoint-up('medium') {
+			text-align: left;
+			width: 30%;
+		}
 
 		h2 {
 			font-size: 4.5rem;
 			line-height: 4.5rem;
 			color: $pale-orange;
 			margin-bottom: 1.5rem;
+
+			@include breakpoint-up('medium') {
+				margin-bottom: 2.625rem;
+			}
 		}
 
 		h3 {
 			font-size: 1.75rem;
 			line-height: 2rem;
 			margin-bottom: 1.5rem;
+
+			@include breakpoint-up('medium') {
+				margin-bottom: 2.375rem;
+			}
 		}
 
 		p {
@@ -31,5 +62,9 @@
 			font-size: 15px;
 			line-height: 25px;
 		}
+	}
+
+	.button {
+		display: block;
 	}
 }

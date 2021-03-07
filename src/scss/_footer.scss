@@ -10,18 +10,35 @@ footer {
 		.logo {
 			margin-bottom: 2.5rem;
 			height: 1.375rem;
+
+			@include breakpoint-up('medium') {
+				height: 1.5rem;
+			}
 		}
 
 		.footer-wrapper_nav {
 			margin-bottom: 3.125rem;
+
+			@include breakpoint-up('medium') {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 3.5625rem;
+			}
+
 			li {
 				text-decoration: none;
 				list-style: none;
-				color: $light-cream;
+				color: rgba(131, 136, 143, 1);
 				margin-bottom: 1.5rem;
-				font-size: 12px;
-				line-height: 15px;
+				font-size: 0.75rem;
+				line-height: 0.9375rem;
 				text-transform: uppercase;
+
+				@include breakpoint-up('medium') {
+					margin-left: 1.0625rem;
+					margin-right: 1.0625rem;
+					margin-bottom: 0;
+				}
 			}
 		}
 
