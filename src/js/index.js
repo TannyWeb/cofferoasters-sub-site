@@ -6,6 +6,6 @@ import { toggleMenu, toggleMenuClose } from './functions/menu';
 console.log('index loaded');
 // menu();
 toggleMenu();
-toggleMenuClose();
+// toggleMenuClose();
 
 
