@@ -6,10 +6,18 @@
 
 .main-container {
 	padding: 0 1.5rem;
+
+	@include breakpoint-up('medium') {
+		padding: 0 2.4375rem;
+	}
 }
 
 .container {
 	padding: 6.25rem 1.5rem;
+
+	@include breakpoint-up('medium') {
+		padding: 5rem 3.625rem;
+	}
 }
 
 body {
