@@ -1,0 +1,62 @@
+.why-choose-us {
+	// background-color: $dark-grey-blue;
+	text-align: center;
+	border-radius: 10px;
+	color: $light-cream;
+	font-family: $heading-font;
+	padding: 0 1.5rem;
+	border-radius: 0.625rem;
+	// .container {
+	// 	padding-top: 4rem;
+	// 	padding-bottom: 4rem;
+	// 	height: 56.25rem;
+
+	.dark {
+		margin-bottom: 4rem;
+		background-color: $dark-grey-blue;
+		height: 900px;
+		margin-bottom: -36rem;
+		margin-right: -1.5rem;
+		margin-left: -1.5rem;
+		padding: 4rem 24px 0;
+		border-radius: 0.625rem;
+
+		h3 {
+			font-size: 1.75rem;
+			line-height: 1.75rem;
+			margin-bottom: 1.5rem;
+		}
+
+		p {
+			font-family: $body-font;
+			font-size: 0.9375rem;
+			line-height: 1.5625rem;
+		}
+	}
+
+	.usp {
+		&_item {
+			background: $dark-cyan;
+			margin-bottom: 1.5rem;
+			border-radius: 8px;
+			padding: 4.5rem 2.125rem 3.1875rem;
+
+			img {
+				margin-bottom: 3rem;
+			}
+
+			h4 {
+				font-size: 1.5rem;
+				line-height: 2rem;
+				margin-bottom: 1.5rem;
+			}
+
+			p {
+				font-family: $body-font;
+				font-size: 0.9375rem;
+				line-height: 1.5625rem;
+			}
+		}
+	}
+	// }
+}

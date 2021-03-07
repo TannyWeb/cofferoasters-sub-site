@@ -1,0 +1,35 @@
+.how-it-works {
+	text-align: center;
+	font-family: $heading-font;
+	color: $dark-grey-blue;
+
+	&_title {
+		color: $grey;
+		margin-bottom: 5rem;
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	&_item {
+		margin-bottom: 3.5rem;
+
+		h2 {
+			font-size: 4.5rem;
+			line-height: 4.5rem;
+			color: $pale-orange;
+			margin-bottom: 1.5rem;
+		}
+
+		h3 {
+			font-size: 1.75rem;
+			line-height: 2rem;
+			margin-bottom: 1.5rem;
+		}
+
+		p {
+			font-family: $body-font;
+			font-size: 15px;
+			line-height: 25px;
+		}
+	}
+}
