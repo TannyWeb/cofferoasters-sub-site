@@ -2,9 +2,14 @@
 @import 'mixins';
 @import 'global';
 
-@import 'header';
-@import 'our-collection';
 @import 'mob-nav';
-@import 'why-choose-us';
-@import 'how-it-works';
 @import 'footer';
+
+// Home
+@import './pages/home/header';
+@import './pages/home/our-collection';
+@import './pages/home/why-choose-us';
+@import './pages/home/how-it-works';
+
+// About
+@import './pages/about/header';

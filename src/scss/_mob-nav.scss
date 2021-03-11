@@ -42,6 +42,11 @@
 			margin-bottom: 32px;
 			cursor: pointer;
 
+			a {
+				text-decoration: none;
+				color: $dark-grey-blue;
+			}
+
 			&:hover {
 				color: rgba(51, 61, 75, 1);
 			}
@@ -80,6 +85,11 @@
 			font-family: $body-font;
 			margin-left: 32px;
 			cursor: pointer;
+
+			a {
+				text-decoration: none;
+				color: $dark-grey-blue;
+			}
 
 			&:hover {
 				color: rgba(51, 61, 75, 1);

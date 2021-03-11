@@ -12,16 +12,6 @@ header {
 		background-image: url('../assets/home/desktop/image-hero-coffeepress.jpg');
 	}
 
-	&.about {
-		background-color: red;
-		background-image: url('../assets/about/mobile/image-hero-whitecup.jpg');
-		margin-bottom: 7.5rem;
-
-		.container {
-			padding: 6.875rem 1.5rem 5rem;
-		}
-	}
-
 	h1 {
 		color: $light-cream;
 		font-family: $heading-font;

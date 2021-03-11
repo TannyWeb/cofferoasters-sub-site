@@ -25,7 +25,13 @@ module.exports = merge(common, {
 					collapseInlineTagWhitespace: true,
 					removeComments: true
 				}
-			})
+			}),
+			
+			new HtmlWebpackPlugin({
+			filename: 'about-us.html',
+			template: './src/pages/about-us.html',
+			chunks: [ 'main', 'vendor' ]
+		})
 		]
 	},
 	plugins: [ new MiniCssExtractPlugin({ filename: '[name].[contentHash].css' }), new CleanWebpackPlugin() ],
