@@ -8,9 +8,19 @@
 		color: $light-cream;
 		border-radius: 10px;
 
+		@include breakpoint-up('medium') {
+			padding: 1.5rem 4rem 4rem 4rem;
+		}
+
 		img {
 			margin-top: -6.25rem;
 			margin-bottom: 3.125rem;
+
+			@include breakpoint-up('medium') {
+				border-radius: 0.625rem;
+				margin-top: -9.375rem;
+				margin-bottom: 4.125rem;
+			}
 		}
 	}
 
@@ -22,6 +32,10 @@
 			font-size: 1.75rem;
 			line-height: 1.75rem;
 			margin-bottom: 1.5rem;
+
+			@include breakpoint-up('medium') {
+				font-size: 2rem;
+			}
 		}
 
 		p {

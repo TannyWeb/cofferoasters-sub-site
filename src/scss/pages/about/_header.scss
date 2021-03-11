@@ -1,15 +1,26 @@
 .about {
-	background-color: red;
 	background-image: url('../assets/about/mobile/image-hero-whitecup.jpg');
 	margin-bottom: 7.5rem;
 
+	@include breakpoint-up('medium') {
+		background-image: url('../assets/about/tablet/image-hero-whitecup.jpg');
+	}
+
 	.container {
 		padding: 6.875rem 1.5rem 5rem;
+
+		@include breakpoint-up('medium') {
+			padding-left: 3.75rem;
+		}
 	}
 
 	h1 {
 		font-size: 28px;
 		line-height: 28px;
+
+		@include breakpoint-up('medium') {
+			font-size: 32px;
+		}
 	}
 
 	p {

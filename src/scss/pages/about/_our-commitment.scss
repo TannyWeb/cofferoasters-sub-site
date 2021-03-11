@@ -1,5 +1,9 @@
 .our-commitment {
 	margin-bottom: 12.5rem;
+
+	@include breakpoint-up('medium') {
+		margin-bottom: 16.25rem;
+	}
 	.container {
 		padding: 0;
 	}
@@ -7,9 +11,18 @@
 		display: flex;
 		flex-direction: column;
 
+		@include breakpoint-up('medium') {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
 		img {
 			width: 100%;
 			border-radius: 0.625rem;
+
+			@include breakpoint-up('medium') {
+				width: 40%;
+			}
 		}
 	}
 
@@ -17,6 +30,11 @@
 		text-align: center;
 		font-family: $heading-font;
 		color: $dark-grey-blue;
+
+		@include breakpoint-up('medium') {
+			width: 50%;
+			text-align: left;
+		}
 
 		h2 {
 			font-size: 2rem;

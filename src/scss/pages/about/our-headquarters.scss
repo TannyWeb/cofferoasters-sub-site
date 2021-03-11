@@ -1,6 +1,10 @@
 .our-headquarters {
 	.container {
 		padding-top: 0;
+
+		@include breakpoint-up('medium') {
+			padding: 0;
+		}
 	}
 
 	h2 {
@@ -9,16 +13,29 @@
 		font-size: 1.5rem;
 		line-height: 2rem;
 		margin-bottom: 3.75rem;
+
+		@include breakpoint-up('medium') {
+			text-align: left;
+		}
+	}
+
+	&__wrapper {
+		@include breakpoint-up('medium') {
+			display: flex;
+		}
 	}
 
 	&__country {
 		text-align: center;
 		color: rgba(51, 61, 75, 1);
 		margin-bottom: 90px;
+		@include breakpoint-up('medium') {
+			text-align: left;
+			margin-right: 3.125rem;
+		}
 
 		img {
 			margin-bottom: 2.625rem;
-			width: 2.375rem;
 		}
 
 		h3 {
