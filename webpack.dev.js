@@ -20,6 +20,13 @@ module.exports = merge(common, {
 			filename: 'about-us.html',
 			template: './src/pages/about-us.html',
 			chunks: [ 'main', 'vendor' ]
+		}),
+		
+
+			new HtmlWebpackPlugin({
+			filename: 'subscribe.html',
+			template: './src/pages/subscribe.html',
+			chunks: [ 'main', 'vendor' ]
 		})
 	],
 	module: {

@@ -63,8 +63,8 @@
 					position: absolute;
 					background: $light-cream;
 					border: 1px solid $dark-cyan;
-					width: 30px;
-					height: 30px;
+					height: 1.875rem;
+					width: 1.875rem;
 					border-radius: 50%;
 					top: -60px;
 				}
@@ -83,12 +83,28 @@
 
 		p {
 			font-family: $body-font;
-			font-size: 15px;
-			line-height: 25px;
+			font-size: 0.9375rem;
+			line-height: 1.5625rem;
 		}
 	}
 
 	.button {
 		display: block;
+		margin: 0 auto;
+	}
+
+	&.subscribe {
+		background: $dark-grey-blue;
+		border-radius: 0.625rem;
+		margin-right: -1.5rem;
+		margin-left: -1.5rem;
+
+		.container {
+			padding: 80px 24px;
+		}
+		h3,
+		p {
+			color: $light-cream;
+		}
 	}
 }

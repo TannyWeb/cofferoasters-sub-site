@@ -1,11 +1,14 @@
 // Dummy imports
 import '../scss/main.scss';
 
-import { toggleMenu, toggleMenuClose } from './functions/menu';
+import { toggleMenu } from './functions/menu';
+
+import { toggleAccordion } from './functions/accordion'
 
 console.log('index loaded');
 // menu();
 toggleMenu();
-// toggleMenuClose();
+
+toggleAccordion();
 
 
