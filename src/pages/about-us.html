@@ -78,7 +78,11 @@
 
         <section class="quality">
             <div class="quality__wrapper">
-                <img src="../assets/about/mobile/image-quality.jpg" alt="">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="../assets/about/desktop/image-quality.jpg">
+                    <source media="(min-width: 768px)" srcset="../assets/about/tablet/image-quality.jpg">
+                    <img src="../assets/about/mobile/image-quality.jpg" alt="">
+                </picture>
                 <div class="quality__text">
                     <h2>Uncompromising quality</h2>
                     <p>Although we work with growers who pay close attention to all stages of harvest and processing, we

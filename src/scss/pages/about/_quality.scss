@@ -19,10 +19,10 @@
 		@include breakpoint-up('large') {
 			flex-direction: row-reverse;
 			justify-content: space-between;
-			padding: 6.25rem 4.5125rem 9.375rem 4.5125rem;
+			padding: 6.25rem 4.5125rem 4.0125rem 4.5125rem;
 		}
 
-		img {
+		picture {
 			margin-top: -6.25rem;
 			margin-bottom: 3.125rem;
 
@@ -34,6 +34,14 @@
 
 			@include breakpoint-up('large') {
 				width: 48%;
+				margin-top: -12.375rem;
+			}
+
+			img {
+				width: 100%;
+				@include breakpoint-up('medium') {
+					border-radius: 0.625rem;
+				}
 			}
 		}
 	}
