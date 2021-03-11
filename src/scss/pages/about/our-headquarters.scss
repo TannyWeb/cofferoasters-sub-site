@@ -5,6 +5,10 @@
 		@include breakpoint-up('medium') {
 			padding: 0;
 		}
+
+		@include breakpoint-up('large') {
+			padding: 5rem 3.625rem;
+		}
 	}
 
 	h2 {
@@ -22,6 +26,9 @@
 	&__wrapper {
 		@include breakpoint-up('medium') {
 			display: flex;
+		}
+		@include breakpoint-up('large') {
+			justify-content: space-between;
 		}
 	}
 

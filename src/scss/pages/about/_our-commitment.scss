@@ -6,6 +6,10 @@
 	}
 	.container {
 		padding: 0;
+
+		@include breakpoint-up('large') {
+			padding: 0 3.625rem;
+		}
 	}
 	&__wrapper {
 		display: flex;
