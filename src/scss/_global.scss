@@ -5,7 +5,7 @@
 }
 
 .main-container {
-	padding: 0 1.5rem;
+	padding: 0 1.5rem 3rem 1.5rem;
 
 	@include breakpoint-up('medium') {
 		padding: 0 2.4375rem;
