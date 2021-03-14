@@ -15,6 +15,18 @@
 		background: $light-cream;
 		border-radius: 10px;
 
+		.exit {
+			position: absolute;
+			background: aliceblue;
+			padding: 10px 15px;
+			border-radius: 50%;
+			top: -15px;
+			right: -10px;
+			font-family: $body-font;
+			font-weight: 900;
+			cursor: pointer;
+		}
+
 		h3 {
 			color: #fff;
 			background-color: $dark-grey-blue;
