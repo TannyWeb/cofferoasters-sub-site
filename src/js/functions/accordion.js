@@ -88,9 +88,54 @@ export const clickItem = () => {
                         // console.log(summaryText1)
                     } 
 
+                    if (parentEl.classList.contains('accord-3')) {
+                        // then remove first option
+                        if (box.children[0].textContent === '250g') {
+    
+                       
+                            console.log('selected 250');
+
+                            // document.querySelector('.accord-5 .accordion__content .accordion_content_item[0]');
+
+                             document.querySelectorAll('.accord-5 .accordion__content .accordion__content_item')[0].querySelector('p').textContent = '$7.20 per shipment. Includes free first-class shipping';
+
+                             document.querySelectorAll('.accord-5 .accordion__content .accordion__content_item')[1].querySelector('p').textContent = '$9.60 per shipment. Includes free priority shipping';
+
+                             document.querySelectorAll('.accord-5 .accordion__content .accordion__content_item')[2].querySelector('p').textContent = '$12.00 per shipment. Includes free priority shipping';
 
 
-                    }
+                            console.log(document.querySelectorAll('.accord-5 .accordion__content .accordion__content_item')[0])
+
+
+                        } else if (box.children[0].textContent === '500g') {
+                             console.log('selected 500')
+             
+                             
+                            document.querySelectorAll('.accord-5 .accordion__content .accordion__content_item')[0].querySelector('p').textContent = '$13.00 per shipment. Includes free first-class shipping';
+
+                             document.querySelectorAll('.accord-5 .accordion__content .accordion__content_item')[1].querySelector('p').textContent = '$17.50 per shipment. Includes free priority shipping';
+
+                             document.querySelectorAll('.accord-5 .accordion__content .accordion__content_item')[2].querySelector('p').textContent = '$22.00 per shipment. Includes free priority shipping';
+    
+                        } else if (box.children[0].textContent === '1000g') {
+                        console.log('selected 1000')
+                  
+                        
+                            document.querySelectorAll('.accord-5 .accordion__content .accordion__content_item')[0].querySelector('p').textContent = '$22.00 per shipment. Includes free first-class shipping';
+
+                             document.querySelectorAll('.accord-5 .accordion__content .accordion__content_item')[1].querySelector('p').textContent = '$32.00 per shipment. Includes free priority shipping';
+
+                             document.querySelectorAll('.accord-5 .accordion__content .accordion__content_item')[2].querySelector('p').textContent = '$42.00 per shipment. Includes free priority shipping';
+
+
+                        }
+                        // console.log(summaryText1)
+                    } 
+                    };
+
+
+
+
 
                     let arr = [];
 
@@ -109,6 +154,8 @@ export const clickItem = () => {
 
                     console.log(arr)
 
+
+
                     if (arr.length === 4) {
                         console.log('cap')
                         let [how, type, much, often] = arr;
@@ -119,7 +166,7 @@ export const clickItem = () => {
                             targetSummary.parentElement.classList.remove('hide')
                             targetSummary.parentElement.classList.add('show')
 
-                    } else if (arr.length === 5) {
+                    } else if (arr.length === 5) { 
                         console.log('no cap');
                         let [how, type, much, grind, often] = arr;
    
